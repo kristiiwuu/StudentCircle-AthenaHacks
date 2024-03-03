@@ -11,12 +11,14 @@
         body{
             padding: 0px;
             margin: 0px;
-            overflow: scroll;
+            /* overflow: scroll; */
             height: auto;
             width: auto;
             background-color: #cfe6ff;
             font-family: "Montserrat", sans-serif;
             color: #150e60;
+            max-width: 100%;
+            overflow-x: hidden;
         }
         #header > h1{
             text-align: center;
@@ -29,6 +31,8 @@
             background-color: #150e60;
             color:#ffcbcb;
             height: 90px;
+            width: 100%;
+            margin: 0px;
         }
         #navbar-pages{
             display: flex;
@@ -73,7 +77,7 @@
         #clublist > #last {
             border-bottom: none;
         }
-        #clublist > .club:hover{
+        .club:hover, h4:hover > a{
             color: #ffcbcb;
             transition: color 250ms;
         }
@@ -96,6 +100,7 @@
             bottom: -300px;
             right: -100px;
             z-index: -1;
+            overflow-x: hidden;
         }
         #svg3 > svg{
             width: 700px;
@@ -111,13 +116,14 @@
             position: absolute;
             left: 270px;
         }
-        .club > a {
+        h4 > a {
             text-decoration: none;
             color:#150e60;
         }
         #footer {
             padding-top: 20px;
         }
+      
     </style>
 </head>
 <body>
@@ -162,9 +168,7 @@
     <div id="rectangle">
         <div id="clublist">
             <div class="club">
-                <a href="profile.html">
-                    <h4>ATHENAHACKS</h4>
-                </a>
+                <h4><a href="profile.html">ATHENAHACKS</a></h4>
                 <p class="description" style="font-size: 15px">Best club ever!</p>
                 <p class="number"> 5 </p>
             </div>
