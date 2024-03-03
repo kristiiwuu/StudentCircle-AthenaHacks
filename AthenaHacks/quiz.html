@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentCircle | Quiz</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        #navbar a:hover, #navbar #highlight-quiz {
+            color: #fdfff4;
+        }
+        #header {
+            height: 200px;
+            width: auto;
+            padding: 50px 0px 0px 100px;
+            color: #150E60;
+            background-color: #cfe6ff;
+        }
+        #header > h1 {
+            font-size: 4em;
+            margin-bottom: 0px;
+        }
+        #quiz {
+            background-color: #fdfff4;
+            padding: 50px 0px 0px 150px;
+        }
+        form > .question {
+            padding: 10px;
+        }
+        .question > select {
+            background-color: #fdfff4;
+            border: 2px solid #150e60;
+            border-radius: 25px;
+            padding: 10px;
+        }
+        input{
+            background-color: #fdfff4;
+            border: 2px solid #150e60;
+            border-radius: 25px;
+            padding: 10px;
+        }
+        form > button {
+            margin-top: 30px;
+            width: 100px;
+            background-color: #fdfff4;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        form > button:hover {
+            background-color: #cfe6ff;
+            color: #150e60;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="navbar">
+            <div id="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <!-- #logo -->
+            <div id="navbar-pages">
+                <a href="index.html">Home</a>
+                <a href="discover.html" id="highlight-discover">Discover</a>
+                <a href="quiz.html" id="highlight-quiz">Quiz</a>
+            </div>
+            <!-- #navbar-pages -->
+        </div>
+        <!-- #navbar -->
+        <div id="header">
+            <h1>Find Your Community</h1>
+            <p>Fill out this survey to get matched with your top 10 students 
+                organizations based on your preferences. There's a place for everyone!</p>
+        </div>
+        <!-- #header -->
+        <div id="quiz">
+            <form action="quiz-results.html" method="post"> <!-- Replace "submit_survey.php" with the actual path to your form handler -->
+                <div class="question">
+                    <label for="q1">1. What are you interested in?</label><br>
+                    <input type="text" id="q1" name="q1" placeholder="Type Here" required>
+                </div>
+                <div class="question">
+                    <label for="q2">2. Which activities do you enjoy?</label><br>
+                    <input type="text" id="q2" name="q2"  placeholder="Type Here" required>
+                </div>
+                <div class="question">
+                    <label for="q3">3. What skills would you like to develop?</label><br>
+                    <input type="text" id="q3" name="q3"  placeholder="Type Here" required>
+                </div>
+                <div class="question">
+                    <label for="q4">4. Are you looking for social or professional clubs?</label><br>
+                    <select id="q4" name="q4" required>
+                        <option value="">Select One</option>
+                        <option value="social">Social</option>
+                        <option value="professional">Professional</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="q5">5. How much time can you dedicate to club activities per week?</label><br>
+                    <input type="number" id="q5" name="q5" min="1" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- #quiz -->
+        <div id="footer">
+            <p>&copy;2024 Student Circle</p>
+        </div>
+        <!-- #footer -->
+    </div>
+    <!-- #content -->
+</body>
+</html>

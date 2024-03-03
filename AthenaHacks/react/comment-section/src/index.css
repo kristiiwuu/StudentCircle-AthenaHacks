@@ -1,0 +1,69 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #150e60;
+  background-color: #fdfff4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  place-items: center;
+  width: 700px;
+  height: auto;
+  /* background-color: pink; */ 
+}
+
+/* #root > #div {
+  margin: 10px 0px;
+  background-color: pink;
+} */
+
+#form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+button:hover {
+  background-color: #150e60;
+  color: #cfe6ff;
+}
+
+button {
+  color: #150e60;
+  background-color: #cfe6ff;
+  padding: 10px;
+  border: 2px solid #150e60;
+  border-radius: 25px;
+  margin-top: 10px;
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+textarea{
+  background-color: #cfe6ff;
+  border: 2px solid #150e60;
+  border-radius: 25px;
+  padding: 10px;
+  width: 500px;
+  height: 100px;
+  color: #150e60;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+::placeholder {
+  color: #150e60;
+}
+

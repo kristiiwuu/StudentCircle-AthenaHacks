@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StudentCircle | Home</title>
+
+        <link rel="stylesheet" href="main.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <style>
+            #content{
+                height: auto;
+                width: auto;
+                background-color: #cfe6ff;
+                font-family: "Montserrat", sans-serif;
+            }
+            #navbar a:hover, #navbar #highlight-home {
+                color: #fdfff4;
+            }
+            #company-name {
+                height: 400px;
+            }
+            #company-name > #student {
+                color: #150e60;
+                font-size: 10em;
+                position: absolute;
+                left: 150px;
+            }
+            #company-name > #circle {
+                color: #150e60;
+                font-size: 10em;
+                position: absolute;
+                right: 340px;
+                top: 180px;
+            }
+            #company-name > .circles {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                position: absolute;
+            }
+            #company-name > #pink {
+                background-color: #ffcbcb;
+                right: 290px;
+                top: 160px;
+                border: 1px solid #fdfff4;
+            }
+            #company-name > #white {
+                background-color: #fdfff4;
+                right: 230px;
+                top: 100px;
+                border: 1px solid #ffcbcb;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                transition: all 2s ease;
+            }
+            #company-name > #white:hover {
+                transform: rotate(360deg);
+            }
+            #white > img {
+                height: 300px;
+                width: auto;
+                position: absolute;
+                bottom: -55px;
+            }
+            #search-bar{
+                padding: 50px 0px 0px 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 2em;
+            }
+            #search-bar > p{
+                margin-bottom: 10px;
+                color: #150e60;
+            }
+            #search-bar input {
+                width: 500px;
+                background-color: #cfe6ff;
+                border: 2px solid #150e60;
+                border-radius: 25px;
+                padding: 10px;
+            }
+            ::placeholder{
+                color: #150e60;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <div id="navbar">
+                <div id="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <!-- #logo -->
+                <div id="navbar-pages">
+                    <a href="index.html" id="highlight-home">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="quiz.html">Quiz</a>
+                </div>
+                <!-- #navbar-pages -->
+            </div>
+            <!-- #navbar -->
+            <div id="company-name">
+                <div class="circles" id="pink"></div>
+                <div class="circles" id="white">
+                    <img src="img/person.png">
+                </div>
+                <h1 id="student">Student</h1>
+                <h1 id="circle">Circle</h1>
+            </div>
+            <!-- company-name -->
+            <div id="search-bar">
+                <p>Search Clubs</p>
+                <form id="bar">
+                    <input type="text" placeholder="Type Here">
+                    <button>Search</button>
+                </form>
+            </div>
+            <!-- #search-bar -->
+            <div id="footer">
+                <p>&copy;2024 Student Circle</p>
+            </div>
+            <!-- #footer -->
+        </div>
+        <!-- #content -->
+    </body>
+</html>

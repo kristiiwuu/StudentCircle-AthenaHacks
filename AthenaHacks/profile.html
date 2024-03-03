@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentCircle | AthenaHacks</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        #content {
+            display: flex;
+        }
+        #navbar a:hover, #navbar #highlight-discover {
+            color: #fdfff4;
+        }
+        #main{
+            padding: 100px 0px;
+        }
+        #rating {
+            position: relative;
+            color: #150e60;
+            padding-bottom: 0px;
+        }
+        #rating > #score {
+            width: 100px;
+            height: auto;
+            font-size: 4.5em;
+            margin: 0px;
+        }
+        #rating > #score:hover {
+            color:#fdfd96;
+            text-shadow: 4px 4px #150e60;
+        }
+        #rating > h2 {
+            position: absolute;
+            margin: 0px;
+            top: 60px;
+            left: 120px;
+        }
+        #club-name{
+            padding: 0px 0px;
+        }
+        #club-name > h1 {
+            margin: 0px;
+            font-size: 5em;
+            color: #ffcbcb;
+            text-shadow: 5px 5px #150e60;
+        }
+        #categories {
+            display: flex;
+            margin-bottom: 80px;
+        }
+        #categories > .cat {
+            background-color: #fdfd96;
+            margin: 10px 10px 0px 10px;
+            padding: 8px;
+            border-radius: 50px;
+            font-size: 16px;
+        }
+        #categories > .cat:hover {
+            background-color: #150e60;
+            color:#fdfff4;
+        }
+        /* #forum {
+            padding-bottom: 100px;
+        }
+
+        #forum form > textarea{
+            height: 100px;
+            width: 700px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        } */
+        iframe {
+            height: 500px;
+            width: 1100px;
+            border:none;
+            box-shadow: 0px 0px 10px #3859dc;
+        }
+        #rate-button {
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="navbar">
+            <div id="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <!-- #logo -->
+            <div id="navbar-pages">
+                <a href="index.html">Home</a>
+                <a href="discover.html" id="highlight-discover">Discover</a>
+                <a href="quiz.html">Quiz</a>
+            </div>
+            <!-- #navbar-pages -->
+        </div>
+        <!-- #navbar -->
+        <div id="main">
+            <div id="rating">
+                <h3>OVERALL RATING:</h3>
+                <h1 id="score">5.0</h1>
+                <h2>/5</h2>
+            </div>
+            <!-- #rating -->
+            <div id="club-name">
+                <h1>ATHENAHACKS</h1>
+            </div>
+            <!-- #club-name -->
+            <div id="categories">
+                <div class="cat">Academic</div>
+                <div class="cat">Viterbi Student Organization</div>
+                <div class="cat">Career</div>
+            </div>
+            <!-- #categories -->
+            <div id="rate-button">
+                <a href="rating-page.html">
+                    <button>Give a Rating</button>
+                </a>
+            </div>
+            <!-- #rate-button -->
+            <div id="comment-sect">
+                <iframe src="http://localhost:5173/" name="comment-frame"></iframe>
+            </div>
+            <!-- #comment-sect -->
+            <!-- <div id="forum">
+                <form>
+                    <label for="input">
+                        <h3>ADD A COMMENT</h3>
+                    </label>
+                    <textarea id="input" placeholder="Type Here"></textarea>
+                </form>
+                <button>Submit</button>
+            </div>
+            #forum -->
+        </div>
+        <!-- #main -->
+    </div>
+    <!-- #content -->
+    <div id="footer">
+        <p>&copy;2024 Student Circle</p>
+    </div>
+    <!-- #footer -->    
+</body>
+</html>

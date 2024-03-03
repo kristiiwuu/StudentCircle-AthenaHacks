@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentCircle | Discover</title>
+    
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            overflow: scroll;
+            height: auto;
+            width: auto;
+            background-color: #cfe6ff;
+            font-family: "Montserrat", sans-serif;
+            color: #150e60;
+        }
+        #header > h1{
+            text-align: center;
+            font-size: 5em;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            margin: 0px;
+        }
+        #navbar {
+            background-color: #150e60;
+            color:#ffcbcb;
+            height: 90px;
+        }
+        #navbar-pages{
+            display: flex;
+            position: absolute;
+            right: 15px;
+            top: 20px;
+        }
+        #navbar-pages > a {
+            margin: 0px 40px;
+            line-height: 50px;
+            text-decoration: none;
+            color: #fdfff4;
+        }
+        #navbar-pages > a:hover, #navbar-pages #highlight-discover{
+            color: #ffcbcb;
+            transition: color 250ms;
+        }
+        #rectangle{
+            background-color: #fdfff4;
+            height: 1008px;
+            width: 1000px;
+            border-radius: 25px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 20px #8c9aad;
+            margin-bottom: 20px;
+        }
+        #clublist{
+            display: grid;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            padding-left: 50px;
+            font-size: 22px;
+        }
+        #clublist > .club{
+            border-bottom: 1px solid #d8d8d8;
+            overflow: hidden;
+            width: auto;
+            height: 110px;
+            display: flex;
+        }
+        #clublist > #last {
+            border-bottom: none;
+        }
+        #clublist > .club:hover{
+            color: #ffcbcb;
+            transition: color 250ms;
+        }
+        .club > p{
+            margin-left: auto;
+            font-size: 25px;
+            padding-right: 60px;
+            padding-top: 20px;
+        } 
+        #svg1 > svg{
+            width: 500px;
+            position: absolute;
+            top: -120px;
+            left: -50px;
+            z-index: -1;
+        }
+        #svg2 > svg{
+            width: 700px;
+            position: absolute;
+            bottom: -300px;
+            right: -100px;
+            z-index: -1;
+        }
+        #svg3 > svg{
+            width: 700px;
+            position: absolute;
+            bottom: -800px;
+            left: -100px;
+            z-index: -1;
+        }
+        .description{
+            display: grid;
+            margin-top: 50px;
+            color: #555;
+            position: absolute;
+            left: 270px;
+        }
+        .club > a {
+            text-decoration: none;
+            color:#150e60;
+        }
+        #footer {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="navbar">
+            <div id="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <!-- #logo -->
+            <div id="navbar-pages">
+                <a href="index.html">Home</a>
+                <a href="discover.html" id="highlight-discover">Discover</a>
+                <a href="quiz.html">Quiz</a>
+            </div>
+            <!-- #navbar-pages -->
+        </div>
+        <!-- #navbar -->
+        <h1>Clubs</h1>
+    </div>
+    <!-- #header -->
+    <div id="svgs">
+        <div id="svg1">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FDFD96" d="M46.6,-47.8C61.9,-42.7,76.8,-29.4,77.7,-15.1C78.6,-0.7,65.4,14.7,52.6,24.2C39.8,33.7,27.3,37.3,13.4,46.5C-0.5,55.7,-15.8,70.6,-32,71.7C-48.3,72.9,-65.4,60.3,-76.2,43.2C-86.9,26.1,-91.3,4.6,-88.3,-16.1C-85.2,-36.8,-74.7,-56.7,-58.8,-61.7C-42.8,-66.7,-21.4,-56.9,-2.9,-53.5C15.6,-50,31.3,-53,46.6,-47.8Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+        <!-- #svg1 -->
+        <div id="svg2">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FDFD96" d="M49.8,-57.9C63.9,-58.4,74.3,-42.9,76.8,-26.9C79.2,-10.9,73.9,5.7,68.4,22C62.8,38.4,57.1,54.5,45.7,55.4C34.2,56.3,17.1,41.9,1.1,40.5C-15,39,-30,50.5,-41.7,49.7C-53.4,48.9,-61.8,35.9,-69.6,20.6C-77.3,5.3,-84.4,-12.2,-78.4,-23.8C-72.3,-35.5,-53.2,-41.2,-38,-40.4C-22.8,-39.6,-11.4,-32.2,3.2,-36.7C17.9,-41.2,35.7,-57.5,49.8,-57.9Z" transform="translate(100 100)" />
+              </svg>
+        </div>
+        <!-- #svg2 -->
+        <div id="svg3">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FDFD96" d="M37.3,-48.6C51.3,-49,67.6,-43.7,77.2,-32.4C86.9,-21.1,89.8,-3.9,85.9,11.2C82,26.4,71.3,39.4,60,51.3C48.6,63.2,36.7,73.8,23.9,74.4C11.1,75,-2.7,65.5,-14.2,57.8C-25.8,50.2,-35.1,44.3,-42.9,36.5C-50.7,28.7,-57,18.9,-60.1,7.7C-63.2,-3.5,-63.1,-16.2,-58.1,-26.3C-53.1,-36.4,-43.1,-44,-32.6,-45.2C-22.1,-46.4,-11.1,-41.2,0.3,-41.6C11.6,-42.1,23.3,-48.2,37.3,-48.6Z" transform="translate(100 100)" />
+              </svg>
+        </div>
+        <!-- #svg2 -->
+    </div>
+    <!-- #svgs -->
+    <div id="rectangle">
+        <div id="clublist">
+            <div class="club">
+                <a href="profile.html">
+                    <h4>ATHENAHACKS</h4>
+                </a>
+                <p class="description" style="font-size: 15px">Best club ever!</p>
+                <p class="number"> 5 </p>
+            </div>
+            <!-- .club -->
+            <div class="club">
+                <h4>BIRD WATCHING</h4>
+                <p class="description" style="font-size: 15px">Where we flock together to admire nature's avian wonders.</p>
+                <p class="number"> 4 </p>
+            </div>
+            <!-- .club -->
+            <div class="club">
+                <h4>FORNITE CLUB</h4>
+                <p class="description" style="font-size: 15px">Conquer Tilted Towers and bond with fellow gamers in epic battles.</p>
+                <p class="number"> 3.6 </p>
+            </div>
+            <!-- .club -->
+            <div class="club">
+                <h4>CABBAGE CLUB</h4>
+                <p class="description" style="font-size: 15px">Celebrating the wonders of the world's finest vegetable.</p>
+                <p class="number"> 2.8 </p>
+            </div>
+            <!-- .club -->
+            <div class="club">
+                <h4>BUSINESS CLUB</h4>
+                <p class="description" style="font-size: 15px">Delve into the world of commerce, even the shady corners.</p>
+                <p class="number"> 1.2 </p>
+            </div>
+            <!-- .club -->
+            <div class="club">
+                <h4>SZA FAN ASSOCIATION</h4>
+                <p class="description" style="font-size: 15px">Patiently waiting for her to get back into the studio (it will never happen).</p>
+                <p class="number"> 4.6 </p>
+            </div>
+            <!-- .club -->
+            <div class="club">
+                <h4>MUSIC HONOR SOCIETY</h4>
+                <p class="description" style="font-size: 15px">BroZone 2.0.</p>
+                <p class="number"> 3.2 </p>
+            </div>
+            <!-- .club -->
+            <div class="club">
+                <h4>TABLE ADMIRATION</h4>
+                <p class="description" style="font-size: 15px;">Tables.</p>
+                <p class="number"> 4 </p>
+            </div>
+            <!-- .club -->
+            <div class="club" id="last">
+                <h4>BOOK CLUB</h4>
+                <p class="description" style="font-size: 15px";>We strictly read the Twilight series over and over again. </p>
+                <p class="number"> 4.5 </p>
+            </div>
+            <!-- .club -->
+        </div>
+        <!-- #clublist -->
+    </div>
+    <!-- #rectangle -->
+    <div id="footer">
+        <p>&copy;2024 Student Circle</p>
+    </div>
+    <!-- #footer -->   
+</body>
+</html>

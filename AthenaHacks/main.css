@@ -1,0 +1,80 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#content{
+    height: auto;
+    width: auto;
+    background-color: #cfe6ff;
+    font-family: "Montserrat", sans-serif;
+}
+#navbar {
+    padding-top: 10px;
+    width: auto;
+    height: 50px;
+    background-color: #cfe6ff;
+    z-index: 1;
+    display: flex;
+}
+
+#logo > img {
+    height: 90px;
+    width: auto;
+    margin: 0px 20px;
+}
+
+#navbar-pages{
+    display: flex;
+    position: absolute;
+    right: 50px;
+}
+
+#navbar-pages > a {
+    margin: 0px 40px;
+    line-height: 50px;
+
+    text-decoration: none;
+    color: #150e60;
+}
+
+#footer{
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+    width: auto;
+    height: 50px;
+    background-color: #cfe6ff;
+    display: flex;
+    /* justify-content: center; */
+}
+
+#footer > p {
+    margin: 0px;
+    line-height: 50px;
+    color: #150e60;
+    background-color: #cfe6ff;
+}
+
+button {
+    color: #150e60;
+    background-color: #cfe6ff;
+    padding: 10px;
+    border: 2px solid #150e60;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+button:hover {
+    color: #cfe6ff;
+    background-color: #150e60;
+}
+
+input, textarea{
+    background-color: #cfe6ff;
+    border: 2px solid #150e60;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+::placeholder{
+    color: #150e60;
+}

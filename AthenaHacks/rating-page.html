@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentCircle | Rating</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #header {
+            margin-top: 40px;
+        }
+        #navbar a:hover {
+            color: #fdfff4;
+        }
+        .star-rating {
+            direction: rtl; /* Right-to-left to allow hover from right to left */
+            font-size: 50px;
+            unicode-bidi: bidi-override;
+            display: inline-block;
+            margin-left: 90px;
+        }
+        .star-rating input {
+            display: none;
+        }
+        .star-rating label {
+            color: #FDFFF4; /* Default star color */
+            cursor: pointer;
+        }
+        .star-rating label:hover,
+        .star-rating label:hover ~ label,
+        .star-rating input:checked ~ label {
+            color: #fdfd96; /* Color of selected stars */
+        }
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        #content{
+            height: auto;
+            width: auto;
+            background-color: #cfe6ff;
+            font-family: "Montserrat", sans-serif;
+        }
+        #athenahacks {
+            color: #ffcbcb;
+            font-size: 5em;
+            position: absolute;
+            left: 100px;
+        }
+        #rate {
+            color: #150E60;
+            font-size: 2em;
+            position: absolute;
+            left: 100px;
+        }
+        #header {
+            width: auto;
+            height: 250px;
+            background-color: #FDFFF4;
+            padding-top: 50px;
+        }
+        #header > h1 {
+            text-shadow: 5px 5px #150e60;
+        }
+        #questions {
+            background-color: #cfe6ff;
+        }
+        .headers {
+            color: #150E60;
+            padding: 0px 30px 0px 30px;
+        }
+        .row {
+            margin: 0px 80px;
+            display: flex;
+        }
+        #q-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .questions > .rectangle {
+            height: 150px;
+            width: 800px;
+            background-color: #cfe6ff;
+            border: 3px solid #150E60;
+            border-radius: 10px;
+            margin: 25px;
+        }
+        #submit {
+            width: auto;
+            background-color: #cfe6ff;
+            display: flex;
+            justify-content: center;
+        }
+        #pfp {
+            position: absolute;
+            right: 100px;
+        }
+        #pfp > img {
+            height: 200px;
+            width: auto;
+            border-radius: 50%;
+            border: 2px solid #150E60;
+        }
+</style>
+</head>
+<body>
+    <div id="content">
+        <div id="navbar">
+            <div id="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <!-- #logo -->
+            <div id="navbar-pages">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="quiz.html">Quiz</a>
+            </div>
+            <!-- #navbar-pages -->
+        </div>
+        <!-- #navbar -->
+        <div id="header">
+            <h3 id="rate">RATE:</h3>
+            <h1 id="athenahacks">ATHENAHACKS</h1>
+            <div id="pfp"> 
+                <img src="img/athena-logo.jfif" alt="AthenaHacks">
+            </div>
+            <!-- #pfp -->
+        </div>
+        <!-- #header -->
+        <div id="q-container">
+            <div class="questions">
+                <div class="rectangle">
+                    <div>
+                        <h2 class="headers">INCLUSIVITY</h2>
+                    </div>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars" name="rating" value="5"><label for="5-stars">&#9733;</label>
+                        <input type="radio" id="4-stars" name="rating" value="4"><label for="4-stars">&#9733;</label>
+                        <input type="radio" id="3-stars" name="rating" value="3"><label for="3-stars">&#9733;</label>
+                        <input type="radio" id="2-stars" name="rating" value="2"><label for="2-stars">&#9733;</label>
+                        <input type="radio" id="1-star" name="rating" value="1"><label for="1-star">&#9733;</label>
+                    </div>
+                    <!-- .star-rating -->
+                </div>
+                <!-- .rectangle1 -->
+            </div>   
+            <!-- .question-->
+            <div class="questions">
+                <div class="rectangle">
+                    <div>
+                        <h2 class="headers">WOULD YOU PARTICIPATE AGAIN</h2>
+                    </div>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-2" name="rating-2" value="5"><label for="5-stars-2">&#9733;</label>
+                        <input type="radio" id="4-stars-2" name="rating-2" value="4"><label for="4-stars-2">&#9733;</label>
+                        <input type="radio" id="3-stars-2" name="rating-2" value="3"><label for="3-stars-2">&#9733;</label>
+                        <input type="radio" id="2-stars-2" name="rating-2" value="2"><label for="2-stars-2">&#9733;</label>
+                        <input type="radio" id="1-star-2" name="rating-2" value="1"><label for="1-star-2">&#9733;</label>
+                    </div>
+                    <!-- .star-rating -->
+                </div>
+            </div>
+            <!-- .questions -->
+            <div class="questions">
+                <div class="rectangle">
+                    <div>
+                        <h2 class="headers">DIVERSITY</h2>
+                    </div>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-3" name="rating-3" value="5"><label for="5-stars-3">&#9733;</label>
+                        <input type="radio" id="4-stars-3" name="rating-3" value="4"><label for="4-stars-3">&#9733;</label>
+                        <input type="radio" id="3-stars-3" name="rating-3" value="3"><label for="3-stars-3">&#9733;</label>
+                        <input type="radio" id="2-stars-3" name="rating-3" value="2"><label for="2-stars-3">&#9733;</label>
+                        <input type="radio" id="1-star-3" name="rating-3" value="1"><label for="1-star-3">&#9733;</label>
+                    </div>
+                </div>    
+            </div>
+            <!-- .questions -->
+        </div>
+        <!-- #q-container -->
+        <div id="submit">
+            <div class="row">
+                <a href="profile.html">
+                    <button class="button">SUBMIT RATING</button>
+                </a>
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- #submit -->
+        <div id="footer">
+            <p>&copy;2024 Student Circle</p>
+        </div>
+        <!-- #footer -->   
+    </div>
+    <!-- #content -->
+</body>
+<script>
+    document.querySelectorAll('.star-rating input').forEach(item => {
+        item.addEventListener('change', function(e) {
+            // alert(`You rated this ${this.value} out of 5`);
+        });
+    });
+</script>
+</html>
